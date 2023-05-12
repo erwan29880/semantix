@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block content  %}
+
+    <button id="nouvellePartie"><a href="/">nouvelle partie</a></button>
+
+    <h1>Devinez le mot !</h1>
+    
+    <p id="message"></p>
+    
+        <div>
+            <label for="devine">Rentrez une proposition :</label>
+        </div>
+        <div>
+            <input type="text", id="devine", name="devine"> <span id="lastEntry"></span>
+        </div>
+
+    <div>
+        <button id="myButton">Tester !</button>
+    </div>
+
+    <div id="myProgress">
+        <div id="myBar">0%</div>
+    </div>
+
+    <div id="myDiv">
+    </div>
+
+
+   
+
+
+    <div>
+        <button id="reponse">mots</button>
+        <button id="motadev">réponse</button>
+    </div>
+
+    <div id="resultat2">
+        <p>{{var2}}</p>
+    </div>
+
+    <div id="resultat">
+        <ul>
+        {% for item in var %}
+        <li>{{ item }}</li>
+        {% endfor %}
+        </ul>
+
+    </div>
+
+
+    <script type="text/javascript" src="{{ url_for('static', filename='utils.js') }}"></script>
+
+{% endblock %}
+
+
+
+
+</body>
+</html>

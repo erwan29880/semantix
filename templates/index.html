@@ -1,0 +1,25 @@
+{% extends "base.html" %}js
+{% block content  %}
+
+
+    <h1>Devinez le mot !</h1>
+     
+    <p>{{ mess }}</p>
+
+    <form action="/", method="post">
+
+        <div>
+            <label for="mot">Rentrez le mot à deviner, laissez vide pour un mot aléatoire</label>
+        </div>
+        
+        <div>
+            <input type="text", id="mot", name="mot"> <input type="submit">
+
+        </div>
+    
+    </form>
+    
+{% endblock %}
+
+</body>
+</html>

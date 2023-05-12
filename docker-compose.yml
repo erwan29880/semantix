@@ -1,0 +1,14 @@
+version: '3.6'
+
+services:
+  serveur:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: semantix
+      tty: true
+      ports:
+        - 6234:6234
+      volumes:
+        - ./:/app
+      command: gunicorn -b 0.0.0.0:6234 wsgi:app  --timeout 120 --workers=1 --threads=1 --worker-connections=10

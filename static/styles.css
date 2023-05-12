@@ -1,0 +1,70 @@
+body{
+    width:100%;
+    background-color: antiquewhite;
+
+}
+
+#content{
+    width:70%;
+    margin : auto;
+}
+
+#nouvellePartie{
+    float:left;
+}
+
+h1{
+    width:100%;
+    text-align: center;
+}
+
+div{
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#lastEntry{
+    margin-left:20px;
+}
+
+#myProgress {
+    width: 100%;
+    background-color: grey;
+}
+  
+#myBar {
+    width: 0%;
+    height: 30px;
+    background-color: green;
+}
+
+
+#resultat{
+    display: none;
+}
+
+#resultat2{
+    display: none;
+}
+
+button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10%;
+}
+button:hover{
+    color:rgb(78, 42, 27);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color:rgb(78, 42, 27);
+}
